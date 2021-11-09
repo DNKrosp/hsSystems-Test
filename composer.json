@@ -1,0 +1,25 @@
+{
+  "name": "test/example",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "zero",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "files": ["paths.php"],
+    "psr-4": {
+      "database\\": "src/database/",
+      "model\\": "src/model/",
+      "controller\\": "src/controller/",
+      "view\\": "src/view/"
+    }
+  },
+  "require": {
+    "ext-pgsql": "*",
+    "ext-pdo": "*"
+  }
+}
